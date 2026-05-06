@@ -1,0 +1,29 @@
+# Data files
+*.csv
+*.tsv
+*.json
+*.parquet
+*.pkl
+*.pickle
+
+# Downloaded thumbnails
+analysis/person2_titles_thumbnails/thumbnails/
+
+# Notebook outputs (keep the .ipynb source, ignore checkpoints)
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Secrets
+.env
+*.env

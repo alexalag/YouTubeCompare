@@ -1,0 +1,15 @@
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+scikit-learn
+tqdm
+requests
+vaderSentiment
+opencv-python-headless
+Pillow
+torch
+torchvision
+open_clip_torch
+anthropic
