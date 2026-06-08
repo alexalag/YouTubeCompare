@@ -29,7 +29,7 @@ Only public data was used, and no user‑level information was collected
 ---
 
 ## Repository structure
-
+```
 YouTubeCompare/
 ├── README.md
 ├── analysis/
@@ -53,7 +53,7 @@ YouTubeCompare/
     ├── config.py
     └── preprocessing.ipynb            # Run after downloading raw data
 
-
+```
 
 
 - **`shared/`** — Shared configuration and preprocessing.
