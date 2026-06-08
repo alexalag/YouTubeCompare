@@ -30,17 +30,51 @@ Only public data was used, and no user‑level information was collected
 
 ## Repository structure
 
+YouTubeCompare/
+├── README.md
+├── analysis/
+│   ├── person1_format_style/
+│   │   ├── visualizations/          # All figures for format/style analysis
+│   │   └── notebook.ipynb
+│   ├── person2_titles_thumbnails/
+│   │   ├── output/                # All figures for format/style analysis
+│   │   ├── 01_title_features.ipynb
+│   │   ├── 02_thumbnail_download.ipynb
+│   │   ├── 03_thumbnail_analysis.ipynb
+│   │   ├── 04_correlation_engagement.ipynb
+│   │   ├── 05_advanced_thumbnail_analysis.ipynb
+│   │   └── 06_temporal_thumbnail_analysis.ipynb
+│   └── person3_evolution/
+│       ├── text_analysis/
+│       │   └── title_analysis.ipynb
+│       ├── visualizations/         # All figures for format/style analysis
+│       └── engagement_comparison.ipynb
+└── shared/
+    ├── config.py
+    └── preprocessing.ipynb            # Run after downloading raw data
 
 
 
+
+- **`shared/`** — Shared configuration and preprocessing.
+  Run `preprocessing.ipynb` once after downloading the raw dataset to
+  generate the preprocessed data used by all analyses. `config.py` holds
+  common settings (paths, channel groups, color palette).
+
+- **`analysis/person1_format_style/`** — Format and style analysis.
+  Figures in `visualizations/`.
+
+- **`analysis/person2_titles_thumbnails/`** — Title and thumbnail analysis,
+  run notebooks `01`–`06` in order. Generated files go to `output/`.
+
+- **`analysis/person3_evolution/`** — Temporal evolution of titles and
+  engagement. Text analysis in `text_analysis/`, figures in `visualizations/`.
 
 ---
 
-
-
 ## What we analyzed
 
-### Video format & style
+### Video format and style
 We compared:
 
 - video duration  
