@@ -10,7 +10,7 @@ We looked at engagement, video format, title vocabulary, thumbnail style, and ho
 
 ## Dataset
 
-We collected public metadata from the YouTube Data API. Here is the link to it: 
+We collected public metadata from the YouTube Data API. Here is the link to it: https://go.epfl.ch/CSM_data_group1
 
 For each video, we kept:
 
