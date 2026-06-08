@@ -1,9 +1,13 @@
-# YouTubeCompare : Comparing Science Communication on YouTube
+# YouTubeCompare : A Comparative Study of Content and Audience Engagement
 
 This repository contains the code and analysis for our DH‑500 project at EPFL. We studied how **institutional YouTube channels** (EPFL, ETH Zürich, MIT, Stanford) differ from **independent science creators** (3Blue1Brown, Kurzgesagt, Walter Lewin, minutephysics) in the way they communicate science and how audiences respond to them.
 
 Our dataset includes **8,742 videos** published between **2008 and 2025**, collected through the YouTube Data API.  
-We looked at engagement, video format, title vocabulary, thumbnail style, and how these elements evolved over time.
+
+The different analysis perfomed focus on the following research question :<br> 
+*How does scientific content perform on YouTube depending on who produces it, and what distinguishes the communication strategies of the two groups?*
+
+Rather than treating popularity as a measure of scientific quality, we study it as an outcome of communication style. Thus, the analysis examines factors such as engagement, video format, title vocabulary, thumbnail style, and how these elements evolved over time.
 
 ---
 
@@ -21,7 +25,7 @@ For each video, we kept:
 - thumbnails (default + high‑res)  
 - channel information  
 
-Only public data was used, and no user‑level information was collected
+Only public data was used, and no user‑level information was collected.
 
 
 
@@ -34,10 +38,10 @@ YouTubeCompare/
 ├── README.md
 ├── analysis/
 │   ├── person1_format_style/
-│   │   ├── visualizations/          # All figures for format/style analysis
+│   │   ├── visualizations/        
 │   │   └── notebook.ipynb
 │   ├── person2_titles_thumbnails/
-│   │   ├── output/                # All figures for format/style analysis
+│   │   ├── output/               
 │   │   ├── 01_title_features.ipynb
 │   │   ├── 02_thumbnail_download.ipynb
 │   │   ├── 03_thumbnail_analysis.ipynb
@@ -47,11 +51,11 @@ YouTubeCompare/
 │   └── person3_evolution/
 │       ├── text_analysis/
 │       │   └── title_analysis.ipynb
-│       ├── visualizations/         # All figures for format/style analysis
+│       ├── visualizations/        
 │       └── engagement_comparison.ipynb
 └── shared/
     ├── config.py
-    └── preprocessing.ipynb            # Run after downloading raw data
+    └── preprocessing.ipynb          
 
 ```
 
@@ -99,12 +103,11 @@ We used a mix of:
 - structured annotation with a vision‑language model  
 - DINOv2 embeddings + UMAP + clustering  
 
-This allowed us to compare visual styles across all 9,568 thumbnails
+This allowed us to compare visual styles across all thumbnails.
 
 ---
 
 ## Key findings 
-
 - Independent creators consistently achieve **higher engagement**
 - Institutional channels have shifted from long lectures to **shorter, more focused videos**
 - Independent channels use **catchier titles** (questions, numbers, hooks), while institutions stay more factual 
